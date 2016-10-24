@@ -23,9 +23,9 @@
     <fieldset>
     <legend>User images</legend>
         <?php
-            echo $this->Form->input('uploads.0.image', ['type' => 'file']);
-            echo $this->Form->input('uploads.1.image', ['type' => 'file']);
-            echo $this->Form->input('uploads.2.image', ['type' => 'file']);
+            echo $this->Form->input('uploads.0.photo', ['type' => 'file']);
+            echo $this->Form->input('uploads.1.photo', ['type' => 'file']);
+            echo $this->Form->input('uploads.2.photo', ['type' => 'file']);
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>

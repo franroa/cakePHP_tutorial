@@ -32,8 +32,8 @@
         <?php
             $uploads = $this->viewVars['user']['uploads'];
 
-            echo $this->Form->input('uploads.0.image', ['type' => 'file', 'multiple']);
-            echo '<label class="form button" for="uploads-0-image">Upload mehrere Bilder durch AJAX</label>';
+            echo $this->Form->input('uploads.0.photo', ['type' => 'file', 'multiple']);
+            echo '<label class="form button" for="uploads-0-photo">Upload mehrere Bilder durch AJAX</label>';
 
             $index = 1;
             foreach ($uploads as $key => $upload) {
@@ -42,7 +42,7 @@
                 }
                 echo '<table>
                     <tr>
-                        <td>'.$this->Form->input('uploads.'.$index.'.image', ['type' => 'file', 'multiple']).'</td>
+                        <td>'.$this->Form->input('uploads.'.$index.'.photo', ['type' => 'file', 'multiple']).'</td>
                     </tr>
                 </table>';
 
