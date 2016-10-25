@@ -66,7 +66,7 @@
         var formData = new FormData();
 
         $($(this)[0].files).each(function (key, file) {
-            formData.append('uploads['+key+'][image]', file);
+            formData.append('uploads['+key+'][photo]', file);
         });
         $.ajax({
                url : '/users/ajaxUploadSeparatedFile',
